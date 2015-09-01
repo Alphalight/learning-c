@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main ()
+
+
+{
+int A, B,resto;
+printf("Digite um numero A: \n");
+scanf("%d", &A);
+printf("Digite um numero B: \n");
+scanf("%d", &B);
+resto=A%B;
+
+if (resto==0)
+    {
+
+    printf("A  e divisivel por B");
+}
+else{
+    printf("A nao e divisivel por B");
+
+}
+return 0;
+
+}
