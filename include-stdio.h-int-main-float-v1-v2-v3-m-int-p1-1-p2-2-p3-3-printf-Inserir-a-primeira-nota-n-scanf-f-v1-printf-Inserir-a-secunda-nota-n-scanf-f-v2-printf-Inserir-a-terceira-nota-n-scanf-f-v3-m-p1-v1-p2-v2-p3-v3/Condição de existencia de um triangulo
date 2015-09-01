@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main ()
+
+
+{
+int A, B, C ;
+printf("Digite um numero A: \n");
+scanf("%d", &A);
+printf("Digite um numero B: \n");
+scanf("%d", &B);
+printf("Digite um numero C: \n");
+scanf("%d", &C);
+if (abs(B-C)<A && A<B+C && abs(A-C)<B &&A+C)
+    {
+
+   printf("Os valores fazem parte de um triangulo");
+
+}
+else{
+    printf("Os valores nao fazem parte de um triangulo");
+
+}
+return 0;
+
+}
