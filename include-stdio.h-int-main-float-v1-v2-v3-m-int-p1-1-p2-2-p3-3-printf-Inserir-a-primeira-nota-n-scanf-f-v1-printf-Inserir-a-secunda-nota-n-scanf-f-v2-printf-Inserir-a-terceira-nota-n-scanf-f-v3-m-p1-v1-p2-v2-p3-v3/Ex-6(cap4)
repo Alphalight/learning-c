@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+  {
+	float n1,n2,r,r1;
+	int e;
+	printf("Digite os dois numeros\n");
+        scanf("%f%f", &n1,&n2);
+        printf("Digite 1 para o calculo da potencia,2 para raiz quadrada e 3 para raiz cubica\n");
+	scanf("%d", &e);
+	switch (e)
+{
+		case 1:
+	r=pow(n1,n2);
+	printf("Resultado da potencia e:%f\n",r);
+	break;
+		case 2:
+	r=sqrt(n1);
+	r1=sqrt(n2);
+	printf("Resultados das raizes quadradas sao:%f,%f\n",r,r1);
+
+	break;
+		case 3:
+	r=cbrt(n1);
+	r1=cbrt(n2);
+	printf("Resultados das raizes cubicas sao:%f,%f\n",r,r1);
+
+	break;
+		default:
+	printf("Entrada errada\n");
+	break;
+}
+}
+
+
+
+
