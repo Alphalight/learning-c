@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+  {
+	float n1,n2,m;
+	printf("Digite as duas notas para o calculo da media\n");
+        scanf("%f%f", &n1,&n2);
+	m=(n1+n2)/2;
+	if(m>=0 && m<3)
+
+{
+	printf("Reprovado\n");
+}
+if (m>=3 && m<7)
+{
+	printf("Exame\n");
+}
+if(m>=7 && m<=10)
+
+{
+	printf("Aprovado\n");
+}
+	{
+return 0;
+}
+
+}
+
