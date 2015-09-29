@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+
+    int main()
+
+    {
+
+        int quantidade=0,azul,ruivo=0,numero=0,idade,i;
+        char olho,cabelo;
+        float altura,peso,inferior,r;
+
+
+        for(i=0,inferior=0,azul=0;i<2;i++)
+
+
+        {
+
+        printf("Dados da pessoa:\n");
+        printf("Digite sua idade:\n");
+        scanf("%d",&idade);
+        printf("Digite o valor de seu peso:\n");
+        scanf("%f",&peso);
+        printf("Digite sua altura:\n");
+        scanf("%f",&altura);
+        printf("Digite a cor se seus olhos:\n");
+        scanf("\n%c",&olho);
+        printf("Digite a cor de seu cabelo:\n");
+        scanf("\n%c",&cabelo);
+
+        if(idade>50 && peso<60)
+        {
+
+        quantidade++;
+
+        }
+
+        if(altura<1.5)
+
+        {
+
+        inferior=inferior+altura;
+        numero++;
+
+        }
+
+        if(olho=='a')
+        {
+
+        azul++;
+
+        }
+        if(cabelo=='r' && !(olho=='a'))
+        {
+
+        ruivo++;
+
+        }
+
+        }
+        r=(azul/2)*100;
+        printf("Quantidade de pessoas com idade superior a 50 anos e peso inferior a 60Kg:%d\n",quantidade);
+        printf("Média das idades das pessoas com altura inferior a 1.5m:%f\n",inferior/numero);
+        printf("Porcentagem das pessoas com olhos azuis:%f\n",r);
+        printf("Quantidade de pessoas ruivas que não tem olhos azuis:%d\n",ruivo);
+        return 0;
+
+    }
